@@ -1,0 +1,20 @@
+<!--miniprogram/pages/message/message.wxml-->
+<view class="message" wx:if="{{ logged }}">
+  
+  <view wx:if="{{ markers }}">
+    <text class="message-text">暂无消息：</text>
+  </view>
+  <view wx:else>
+    <text class="message-text">消息列表：</text>
+    <remove-list wx:for="{{ markers }}" wx:key="{{ index }}" messageId="{{ item }}" bindmyevent="onMyEvent" />
+        <remove-list wx:for="{{ markers }}" wx:key="{{ index }}"  bindmyevent="onMyEvent" />
+  </view>
+
+</view>
+<block wx:for="{{markers}}">
+<view >
+ <text class="message-text">消息列表：</text>
+  <text class="message-text">{{ item.nickName }}</text>
+<remove-list wx:for="{{ item.nickName }}" wx:key="{{ index }}" messageId="{{ item }}" bindmyevent="onMyEvent" />
+</view>
+</block>

@@ -1,0 +1,11 @@
+<!--components/removeList/removeList.wxml-->
+
+    <navigator url="{{ '/pages/projectDetail/projectDetail?userId=' +projectMessage._id  }}" open-type="navigate">
+    <van-cell-group>
+  <van-cell title="{{projectMessage.projectname}}" value="内容" label="描述信息" border="{{ false }}" />
+</van-cell-group>
+</navigator>
+<button wx:if="{{!ismyself}}" bindtap="exitTeam">退出</button>
+<button wx:else bindtap="dismissTeam" >解散</button> 
+
+

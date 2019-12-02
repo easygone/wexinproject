@@ -1,0 +1,10 @@
+<block wx:for="{{project}}" wx:key="{{index}}">
+  <navigator url="{{ '/pages/projectDetail/projectDetail?userId=' + item._id }}" open-type="navigate">
+    <van-cell-group>
+      <van-cell title="{{item.projectname}}" value="内容" label="描述信息" border="{{ false }}" />
+    </van-cell-group>
+  </navigator>
+
+  <button bindtap="joinProject" data-id="{{item.userId}}" data-projectid="{{item._id}}">join</button>
+  <button>申请中</button>
+</block>

@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/near/near",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/editUserInfo/editUserInfo",
+    "pages/friendList/friendList",
+    "pages/detail/detail",
+    "pages/editUserInfo/head/head",
+    "pages/editUserInfo/name/name",
+    "pages/editUserInfo/signature/signature",
+    "pages/editUserInfo/location/location",
+    "pages/editUserInfo/phone/phone",
+    "pages/editUserInfo/weixin/weixin",
+    "pages/nearpeople/nearpeople",
+    "pages/createProject/createProject",
+    "pages/projectList/projectList",
+    "pages/projectDetail/projectDetail",
+    "pages/joinList/joinList"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#937bf5",
+    "navigationBarTitleText": "喵喵的喵星人",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#b4b5b6",
+    "selectedColor": "#937bf5",
+    "list": [
+      {
+        "iconPath": "images/tabbar/首页.png",
+        "selectedIconPath": "images/tabbar/首页_active.png",
+        "pagePath": "pages/projectList/projectList",
+        "text": "项目列表"
+      },
+      {
+        "iconPath": "images/tabbar/附近.png",
+        "selectedIconPath": "images/tabbar/附近_active.png",
+        "pagePath": "pages/joinList/joinList",
+        "text": "已加入项目"
+      },
+      {
+        "iconPath": "images/tabbar/附近.png",
+        "selectedIconPath": "images/tabbar/附近_active.png",
+        "pagePath": "pages/createProject/createProject",
+        "text": "发布"
+      },
+      {
+        "iconPath": "images/tabbar/消息.png",
+        "selectedIconPath": "images/tabbar/消息_active.png",
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "iconPath": "images/tabbar/我的.png",
+        "selectedIconPath": "images/tabbar/我的_active.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "vant-weapp/button",
+    "van-cell": "vant-weapp/cell",
+    "van-cell-group": "vant-weapp/cell-group"
+  }
+}
